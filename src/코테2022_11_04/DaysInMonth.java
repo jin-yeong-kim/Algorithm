@@ -1,7 +1,7 @@
 package 코테2022_11_04;
 
 public class DaysInMonth {
-    public int daysInMonth(int month) {
+    public int DaysInMonth(int month) {
     // TODO:
     int result = 0;
     switch (month) {
@@ -52,4 +52,6 @@ public class DaysInMonth {
        default: return 31; */
 }
 	}
-            }
+
+
+
