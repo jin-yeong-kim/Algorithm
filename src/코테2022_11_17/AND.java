@@ -2,7 +2,7 @@ package 코테2022_11_17;
 
 import java.util.Arrays;
 
-public class And {
+public class AND {
     public static void main(String[] args) {
         boolean output = and(new boolean[]{true, true, true});
         System.out.println(output);
