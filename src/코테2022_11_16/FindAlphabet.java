@@ -25,7 +25,8 @@ public class FindAlphabet {
         }
 
         for(int val : arr) { // 배열 출력
-            System.out.println(val + " ");
+            System.out.print(val + " ");
         }
     }
 }
+
