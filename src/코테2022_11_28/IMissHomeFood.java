@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class IMissHomefood {
+public class IMissHomeFood {
     public static void main(String[] args) {
         ArrayList<String[]> output = missHouseMeal(new String[]{"eggroll", "kimchi", "fishSoup"});
         System.out.println(Arrays.deepToString(output.toArray()));
