@@ -3,7 +3,7 @@ package 코테2022_11_28;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class day {
+public class PeperoDay {
     public static void main(String[] args) {
         int M = 4;
         int N = 8;
