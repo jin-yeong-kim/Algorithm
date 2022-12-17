@@ -16,27 +16,29 @@ import java.io.InputStreamReader;
 첫째 줄에 그룹 단어의 개수를 출력한다.*/
 
 public class GroupWordCheck {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        int num = Integer.parseInt(br.readLine());
-//        int count = 0;
-//        loop : for(int i = 0; i < num; i++) {
-//            String word = br.readLine();
-//            for(int j = 0; j < word.length(); j++) {
-//                for(int k = 0; k < word.length(); k++) {
-//                    if(k == j) continue;
-//                    if(word.charAt(j) == word.charAt(k)) {
-//                        if(k - 1 >= 0) {
-//                            if(word.charAt(k - 1) != word.charAt(j)) {continue loop;}
-//                            else if(word.charAt(k - 1) == word.charAt(j)) count++; continue loop;
-//                        }
-//                    }
-//                }
-//            }
-//            count++;
-//        }
-//        System.out.println(count);
-//    } * 출력값 5개에 전부 부합하지만 왠지 백준에선 실패가 뜸...
+/*
+     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        int count = 0;
+        loop : for(int i = 0; i < num; i++) {
+            String word = br.readLine();
+            for(int j = 0; j < word.length(); j++) {
+                for(int k = 0; k < word.length(); k++) {
+                    if(k == j) continue;
+                    if(word.charAt(j) == word.charAt(k)) {
+                        if(k - 1 >= 0) {
+                            if(word.charAt(k - 1) != word.charAt(j)) {continue loop;}
+                            else if(word.charAt(k - 1) == word.charAt(j)) count++; continue loop;
+                        }
+                    }
+                }
+            }
+            count++;
+        }
+        System.out.println(count);
+    } 출력값 5개에 전부 부합하지만 왠지 백준에선 실패가 뜸...
+*/
         static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         public static void main(String[] args) throws IOException{
             int count = 0;
