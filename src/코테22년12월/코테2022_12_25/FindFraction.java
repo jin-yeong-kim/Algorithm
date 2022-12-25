@@ -9,7 +9,7 @@ public class FindFraction {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int X = 7;//Integer.parseInt(br.readLine());
+        int X = Integer.parseInt(br.readLine());
 
         int cross_count = 1, prev_count_sum = 0;
 
