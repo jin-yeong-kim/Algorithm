@@ -21,7 +21,6 @@ Arrays.sort 사용은 금지됩니다.
 입출력 예시
 int[] output = mergeSort(new int[]{3, 1, 21});
 System.out.println(output); // --> [1, 3, 21]*/
-import java.util.List;
 
 public class MergeSort {
     public static void main(String[] args) {
