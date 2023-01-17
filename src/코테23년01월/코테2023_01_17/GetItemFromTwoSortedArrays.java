@@ -1,6 +1,7 @@
 package 코테23년01월.코테2023_01_17;
 
-/*문제
+/*
+문제
 길이가 m, n이고 오름차순으로 정렬되어 있는 자연수 배열들을 입력받아 전체 요소 중 k번째 요소를 리턴해야 합니다.
 
 입력
@@ -38,7 +39,8 @@ Advanced
 단순히 처음부터 끝까지 찾아보는 방법(O(K)) 대신 다른 방법(O(logK))을 탐구해 보세요.
 
 힌트
-이진 탐색(binary search)을 응용하여 해결합니다.*/
+이진 탐색(binary search)을 응용하여 해결합니다.
+*/
 
 import java.util.Arrays;
 
@@ -53,6 +55,7 @@ public class GetItemFromTwoSortedArrays {
         // 필드 변수를 사용하면 테스트가 정상적으로 작동하지 않습니다.
         // 메서드 내부에서 값을 저장하고 활용해주세요.
         // TODO:
+
         // O(1) 시간 복잡도
         int[] arr = new int[arr1.length + arr2.length];
         System.arraycopy(arr1,0, arr, 0, arr1.length);
