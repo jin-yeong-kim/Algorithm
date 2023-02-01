@@ -22,6 +22,11 @@ int 타입을 리턴해야 합니다.
 주의사항
 LCS의 길이를 리턴해야 합니다.
 LCS가 존재하지 않는 경우, 0을 리턴해야 합니다.
+
+Advanced
+LCS를 계산하는 효율적인 알고리즘(O(M * N))이 존재합니다(두 문자열의 길이가 각각 M, N일 경우). 쉽지 않기 때문에 바로 레퍼런스 코드를 보고 이해하는 데 집중하시기 바랍니다.
+LCS의 길이 대신 LCS 자체를 리턴하는 함수를 구현해 보시기 바랍니다.
+LIS와 LCS를 변형하여 두 문자열 또는 배열을 입력받아 LCIS(Longest Common Increasing Subsequence)의 길이 또는 그 자체를 리턴하는 함수를 구현해 보시기 바랍니다.
 */
 
 import java.util.Arrays;
