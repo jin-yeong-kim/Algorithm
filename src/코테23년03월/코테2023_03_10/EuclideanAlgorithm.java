@@ -27,7 +27,6 @@ package 코테23년03월.코테2023_03_10;
 A와 B의 최소공배수를 한 줄에 출력한다.*/
 
 import java.io.*;
-import java.util.*;
 
 public class EuclideanAlgorithm {
     public static void main(String[] args) throws IOException {
