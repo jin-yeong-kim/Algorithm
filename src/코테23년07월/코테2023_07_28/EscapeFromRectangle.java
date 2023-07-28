@@ -11,8 +11,8 @@ public class EscapeFromRectangle {
         arr[2] = String.valueOf(Long.parseLong(arr[2]) - Long.parseLong(arr[0]));
         arr[3] = String.valueOf(Long.parseLong(arr[3]) - Long.parseLong(arr[1]));
         Long min = Long.parseLong(arr[0]);
-        for (int i = 0; i < arr.length; i++) {
-            if (min > Long.parseLong(arr[i])) min = Long.parseLong(arr[i]);
+        for (String s : arr) {
+            if (min > Long.parseLong(s)) min = Long.parseLong(s);
         }
         System.out.println(min);
     }
