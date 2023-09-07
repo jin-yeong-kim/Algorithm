@@ -19,7 +19,7 @@ public class BaekJoon10811 {
             st = new StringTokenizer(br.readLine());
             int A = Integer.parseInt(st.nextToken()) - 1;
             int B = Integer.parseInt(st.nextToken()) - 1;
-            for (int j = A, k = B; j <= k; j++, k--) {
+            for (int j = A, k = B; j <= k; j++, k--) { // 역순
                 int V = result[j];
                 result[j] = result[k];
                 result[k] = V;
