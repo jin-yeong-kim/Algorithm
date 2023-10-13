@@ -1,4 +1,4 @@
-package 코테23년10월.코테2023_10_12;
+package 코테23년10월.코테2023_10_13;
 
 import java.io.BufferedReader;
 import java.io.IOException;
