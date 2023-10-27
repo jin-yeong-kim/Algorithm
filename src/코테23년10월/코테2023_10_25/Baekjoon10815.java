@@ -1,34 +1,46 @@
 package 코테23년10월.코테2023_10_25;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Baekjoon10815 {
+    static int[] arr;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         br.readLine();
-        long[] sub = Arrays.stream(br.readLine().split(" ")).mapToLong(Long::parseLong).toArray();
-        br.readLine();
-        long[] main = Arrays.stream(br.readLine().split(" ")).mapToLong(Long::parseLong).toArray();
-        int[] result = new int[main.length];
-        for (int i = 0; i < sub.length; i++) {
-            long n = sub[i];
-            for (int j = 0; j < main.length; j++) {
-                if (n == main[j]) {
-                    result[j] = 1;
-                }
-            }
-        }
-        String output = "";
-        for (int j = 0; j < result.length; j++) {
-            if (j != result.length - 1) {
-                output += result[j] + " ";
+        arr = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        Arrays.sort(arr);
+        int main = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < main; i++) {
+            int n = Integer.parseInt(st.nextToken());
+            if (binarySearch(n)) {
+                bw.write("1 ");
             } else {
-                output += result[j];
+                bw.write("0 ");
             }
         }
-        System.out.println(output);
+        bw.close();
+        br.close();
+    }
+
+    public static boolean binarySearch(int num) {
+        int leftIndex = 0;
+        int rightIndex = arr.length - 1;
+        while (leftIndex <= rightIndex) {
+            int midIndex = (leftIndex + rightIndex) / 2;
+            int mid = arr[midIndex];
+
+            if (num < mid) {
+                rightIndex = midIndex - 1;
+            } else if (num > mid) {
+                leftIndex = midIndex + 1;
+            } else {
+                return true;
+            }
+        }
+        return false;
     }
 }
