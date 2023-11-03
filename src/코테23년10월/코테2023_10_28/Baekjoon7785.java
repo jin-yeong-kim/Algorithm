@@ -32,7 +32,7 @@ public class Baekjoon7785 {
                 result.add(person.getKey());
             }
         }
-        Collections.reverse(result);
+        result.sort(Collections.reverseOrder());
         for (String name : result) {
             System.out.println(name);
         }
