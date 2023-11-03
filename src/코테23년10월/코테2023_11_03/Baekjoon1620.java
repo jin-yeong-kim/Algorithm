@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-// 가장 효율이 좋은 HashMap을 사용하여 시간초과를 면할 수 있다.
+// 가장 효율이 좋은 HashMap 을 사용하면 시간 초과를 면할 수 있다.
 
 public class Baekjoon1620 {
     public static void main(String[] args) throws IOException {
