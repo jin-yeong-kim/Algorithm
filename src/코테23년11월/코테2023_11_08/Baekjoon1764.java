@@ -8,6 +8,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
+/*효율이 좋은 HashMap과 StringBuilder를 사용*/
+
 public class Baekjoon1764 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +17,7 @@ public class Baekjoon1764 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         HashMap<String, Boolean> list = new HashMap<>();
-        ArrayList<String> subList = new ArrayList<>();
+        ArrayList<String> subList = new ArrayList<>(); // 사전순 정렬을 위해 리스트에 넣은 뒤에 StringBuilder에 넣어줌
         StringBuilder sb = new StringBuilder();
         int count = 0;
         for (int i = 0; i < N; i++) {
